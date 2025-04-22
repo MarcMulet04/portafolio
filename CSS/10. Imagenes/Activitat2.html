@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Contacto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+        }
+
+        section {
+            margin-top: 25px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        li {
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <img src="tu-imagen.jpg" alt="Tu Imagen">
+
+        <section>
+            <h1>Tu Nombre</h1>
+            <p>Tu Profesión o Descripción Breve</p>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="#">Curriculum Vitae</a></li>
+                <li><a href="#">Redes Sociales</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </nav>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitio con Tipografías</title>
+    <style>
+        @font-face {
+            font-family: 'FuenteTitulo';
+            src: url('ruta/a/tu/fuente-titulo.ttf') format('truetype');
+            
+        }
+
+        @font-face {
+            font-family: 'FuenteTexto';
+            src: url('ruta/a/tu/fuente-texto.woff') format('woff');
+           
+        }
+
+        .titulo {
+            font-family: 'FuenteTitulo', sans-serif;
+            cursor: pointer;
+        }
+
+        .contenido {
+            font-family: 'FuenteTexto', sans-serif;
+        }
+
+        .titulo:hover {
+            font-style: italic;
+            color: blue;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>Texto del Título</h1>
+    </div>
+
+    <div class="contenido">
+        <p>Este es un párrafo con la tipografía del texto.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Header con Logo, Navegador y Búsqueda</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 50px;
+            height: auto;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        form {
+            display: inline-block;
+            margin-left: auto;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="ruta/a/tu/logo.png" alt="Logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <form>
+            <input type="text" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </header>
+
+</body>
+</html>

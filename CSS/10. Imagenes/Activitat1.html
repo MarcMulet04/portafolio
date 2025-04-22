@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat entre Personas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .chat-container {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .message-content {
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            max-width: 70%;
+        }
+
+        .sender {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .timestamp {
+            font-size: 12px;
+            color: #888;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="message">
+            <img class="avatar" src="avatar1.jpg" alt="Avatar Persona 1">
+            <div class="message-content">
+                <p class="sender">Persona 1</p>
+                <p>Hola, cómo va todo?</p>
+                <span class="timestamp">10:30 AM</span>
+            </div>
+        </div>
+
+        <div class="message">
+            <img class="avatar" src="avatar2.jpg" alt="Avatar Persona 2">
+            <div class="message-content">
+                <p class="sender">Persona 2</p>
+                <p>Hola! Un poco preocupado, pero bien, gracias! Y tu?</p>
+                <span class="timestamp">10:32 AM</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

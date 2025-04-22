@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectángulo con Altura Variable</title>
+    <style>
+
+        .rectangulo {
+            --altura-rectangulo: 100px;
+            width: calc(var(--altura-rectangulo) * 2);
+            height: var(--altura-rectangulo);
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangulo"></div>
+</body>
+</html>

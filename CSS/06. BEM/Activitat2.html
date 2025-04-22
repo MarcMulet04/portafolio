@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Comentarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #comments-section {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comment-text {
+            margin-bottom: 10px;
+        }
+
+        .comment-date {
+            font-size: 12px;
+            color: #888;
+        }
+
+        #comment-form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="comments-section">
+        <div class="comment">
+            <div class="comment-author">Juan Pérez</div>
+            <div class="comment-text">¡Excelente artículo! Me encantó.</div>
+            <div class="comment-date">Publicado el 01 de enero de 2022</div>
+        </div>
+
+    </div>
+
+    <div id="comment-form">
+        <h2>Deja un comentario</h2>
+        <form action="#" method="post">
+            <label for="comment-author">Nombre:</label>
+            <input type="text" id="comment-author" name="comment-author" required>
+
+            <label for="comment-text">Comentario:</label>
+            <textarea id="comment-text" name="comment-text" rows="4" required></textarea>
+
+            <input type="submit" value="Publicar comentario">
+        </form>
+    </div>
+
+</body>
+</html>
