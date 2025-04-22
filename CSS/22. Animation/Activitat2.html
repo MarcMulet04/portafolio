@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Noria Sencilla</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB;
+        }
+
+        .noria {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .base {
+            width: 10px;
+            height: 100px;
+            background-color: #8B4513;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 5px;
+        }
+
+        .asiento {
+            width: 20px;
+            height: 4px;
+            background-color: #FFD700;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: giraNoria 5s infinite linear;
+        }
+
+        @keyframes giraNoria {
+            from {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            to {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="noria">
+        <div class="base"></div>
+        <div class="asiento"></div>
+    </div>
+
+</body>
+</html>

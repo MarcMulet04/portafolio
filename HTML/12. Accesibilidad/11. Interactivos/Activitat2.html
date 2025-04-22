@@ -1,0 +1,19 @@
+<h1>Buscador de Smartphones</h1>
+
+<form id="searchForm">
+    <label for="brand">Marca:</label>
+    <input type="text" id="brand" name="brand" placeholder="Escribe la marca" autocomplete="off">
+
+    <label for="priceRange">Rango de Precios:</label>
+    <select id="priceRange" name="priceRange">
+        <option value="">Selecciona un rango</option>
+        <option value="0-200">0 - 200 EUR</option>
+        <option value="201-500">201 - 500 EUR</option>
+        <option value="501-1000">501 - 1000 EUR</option>
+        <option value="1001-">Más de 1000 EUR</option>
+    </select>
+
+    <button type="button" onclick="searchPhones()">Buscar</button>
+</form>
+
+<div id="results"></div>

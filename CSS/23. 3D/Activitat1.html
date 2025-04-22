@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Efecto Hover 3D</title>
+    <style>
+        .image {
+            width: 300px;
+            height: 200px;
+            background: url('https://via.placeholder.com/300x200') center/cover;
+            transition: transform 0.5s;
+        }
+
+        .image:hover {
+            transform: rotateX(-10deg) rotateY(10deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image"></div>
+
+</body>
+</html>
